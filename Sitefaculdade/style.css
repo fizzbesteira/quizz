@@ -1,0 +1,203 @@
+:root {
+  --bg-color: #f2f2f2;
+  --text-color: #333;
+  --header-bg: linear-gradient(to right, #4CAF50, #81C784);
+  --card-bg: white;
+  --border-color: #4CAF50;
+  --button-bg: #e0e0e0;
+  --button-hover: #c8e6c9;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #eee;
+  --header-bg: linear-gradient(to right, #2E7D32, #388E3C);
+  --card-bg: #2c2c2c;
+  --border-color: #81C784;
+  --button-bg: #555;
+  --button-hover: #4CAF50;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--header-bg);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+#toggleTheme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--button-bg);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#toggleTheme:hover {
+  background: var(--button-hover);
+  color: white;
+}
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.disease-section {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.disease-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.disease-header img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+}
+
+.quiz {
+  margin-top: 1rem;
+}
+
+.question {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  background-color: #f9f9f9;
+  border-left: 5px solid var(--border-color);
+  border-radius: 6px;
+}
+
+body.dark .question {
+  background-color: #3a3a3a;
+}
+
+.options button {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  transition: background-color 0.3s;
+}
+
+.options button:hover {
+  background-color: var(--button-hover);
+  color: white;
+}
+
+.feedback {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #eee;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+}
+/* Cards animados */
+.question {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-left: 5px solid var(--border-color);
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark .question {
+  background-color: #3a3a3a;
+}
+
+.question:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Botões das opções */
+.options button {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.options button:hover {
+  background-color: var(--button-hover);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Efeito de seleção */
+.options button.selected.correct {
+  background-color: #4CAF50 !important;
+  color: white;
+  animation: pop 0.3s ease;
+}
+
+.options button.selected.incorrect {
+  background-color: #e53935 !important;
+  color: white;
+  animation: shake 0.3s ease;
+}
+
+/* Feedback animado */
+.feedback {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+.feedback.show {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+/* Animações */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}

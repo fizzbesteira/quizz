@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EducaZoo - Zoonoses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>EducaZoo - Zoonoses</h1>
+    <p>Aprenda sobre doenças transmitidas entre animais e humanos</p>
+    <button id="toggleTheme">🌙 Modo Escuro</button>
+  </header>
+
+  <main>
+    <!-- RAIVA -->
+    <section class="disease-section">
+      <div class="disease-header">
+        <img src="images/raiva.jpg" alt="Raiva" class="disease-img">
+        <h2>Raiva</h2>
+      </div>
+      <p><strong>Causa:</strong> Vírus</p>
+      <p><strong>Transmissão:</strong> Mordida, arranhão ou lambida de animal infectado (principalmente cães e gatos)</p>
+      <p><strong>Sintomas:</strong> Agressividade, salivação excessiva, paralisia</p>
+      <p><strong>Prevenção:</strong> Vacinação de animais e humanos expostos</p>
+
+      <div class="quiz">
+        <h3>Quiz - Raiva</h3>
+        <div class="question" data-answer="B">
+          <p>1. A raiva é causada por:</p>
+          <div class="options">
+            <button>A) Bactéria</button>
+            <button>B) Vírus</button>
+            <button>C) Fungo</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="B">
+          <p>2. Principal forma de transmissão:</p>
+          <div class="options">
+            <button>A) Picada de mosquito</button>
+            <button>B) Mordida ou lambida de animal infectado</button>
+            <button>C) Contato com plantas</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="B">
+          <p>3. Qual animal é o principal transmissor urbano?</p>
+          <div class="options">
+            <button>A) Gato</button>
+            <button>B) Cão</button>
+            <button>C) Cavalo</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>4. Existe vacina para:</p>
+          <div class="options">
+            <button>A) Humanos e animais</button>
+            <button>B) Apenas humanos</button>
+            <button>C) Apenas animais</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="C">
+          <p>5. Sintoma comum em animais:</p>
+          <div class="options">
+            <button>A) Coceira</button>
+            <button>B) Sonolência</button>
+            <button>C) Agressividade e salivação excessiva</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEISHMANIOSE -->
+    <section class="disease-section">
+      <div class="disease-header">
+        <img src="images/leishmaniose.jpg" alt="Leishmaniose" class="disease-img">
+        <h2>Leishmaniose</h2>
+      </div>
+      <p><strong>Causa:</strong> Protozoário Leishmania</p>
+      <p><strong>Transmissão:</strong> Picada do mosquito-palha</p>
+      <p><strong>Reservatório doméstico:</strong> Cão</p>
+      <p><strong>Sintomas em cães:</strong> Feridas na pele, queda de pelos, emagrecimento</p>
+      <p><strong>Prevenção:</strong> Coleiras repelentes, eliminar criadouros do mosquito, evitar acúmulo de matéria orgânica</p>
+
+      <div class="quiz">
+        <h3>Quiz - Leishmaniose</h3>
+        <div class="question" data-answer="A">
+          <p>1. A leishmaniose é transmitida por:</p>
+          <div class="options">
+            <button>A) Picada do mosquito-palha</button>
+            <button>B) Mordida de cachorro</button>
+            <button>C) Água contaminada</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>2. O agente causador é:</p>
+          <div class="options">
+            <button>A) Um protozoário</button>
+            <button>B) Uma bactéria</button>
+            <button>C) Um vírus</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>3. O principal reservatório doméstico é:</p>
+          <div class="options">
+            <button>A) O cão</button>
+            <button>B) O gato</button>
+            <button>C) O rato</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="B">
+          <p>4. Um sinal clínico comum em cães:</p>
+          <div class="options">
+            <button>A) Tosse seca</button>
+            <button>B) Feridas na pele e queda de pelos</button>
+            <button>C) Tremores</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>5. Como prevenir?</p>
+          <div class="options">
+            <button>A) Usar coleiras repelentes e eliminar criadouros do mosquito</button>
+            <button>B) Dar banho no animal</button>
+            <button>C) Alimentar com ração especial</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEPTOSPIROSE -->
+    <section class="disease-section">
+      <div class="disease-header">
+        <img src="images/leptospirose.jpg" alt="Leptospirose" class="disease-img">
+        <h2>Leptospirose</h2>
+      </div>
+      <p><strong>Causa:</strong> Bactéria Leptospira</p>
+      <p><strong>Transmissão:</strong> Contato com água ou lama contaminada por urina de ratos</p>
+      <p><strong>Sintomas:</strong> Febre, dor muscular, dor de cabeça; pode afetar fígado e rins</p>
+      <p><strong>Prevenção:</strong> Evitar contato com água suja, usar botas e luvas, controlar roedores</p>
+
+      <div class="quiz">
+        <h3>Quiz - Leptospirose</h3>
+        <div class="question" data-answer="A">
+          <p>1. A leptospirose é causada por:</p>
+          <div class="options">
+            <button>A) Bactéria Leptospira</button>
+            <button>B) Vírus da dengue</button>
+            <button>C) Fungos do solo</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="B">
+          <p>2. A infecção ocorre principalmente por:</p>
+          <div class="options">
+            <button>A) Ingestão de carne crua</button>
+            <button>B) Contato com água contaminada por urina de rato</button>
+            <button>C) Picada de mosquito</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="C">
+          <p>3. Um sintoma comum em humanos:</p>
+          <div class="options">
+            <button>A) Coceira leve</button>
+            <button>B) Visão turva</button>
+            <button>C) Febre e dor muscular</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>4. A melhor prevenção é:</p>
+          <div class="options">
+            <button>A) Evitar contato com enchentes e água suja</button>
+            <button>B) Tomar vitaminas</button>
+            <button>C) Comer bem</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="C">
+          <p>5. A leptospirose pode afetar:</p>
+          <div class="options">
+            <button>A) Só animais</button>
+            <button>B) Só humanos</button>
+            <button>C) Humanos e animais</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOXOPLASMOSE -->
+    <section class="disease-section">
+      <div class="disease-header">
+        <img src="images/toxoplasmose.jpg" alt="Toxoplasmose" class="disease-img">
+        <h2>Toxoplasmose</h2>
+      </div>
+      <p><strong>Causa:</strong> Protozoário Toxoplasma gondii</p>
+      <p><strong>Transmissão:</strong> Carne crua ou malcozida, frutas e verduras mal lavadas, contato com fezes de gatos infectados</p>
+      <p><strong>Grupo de risco:</strong> Gestantes e pessoas com baixa imunidade</p>
+      <p><strong>Prevenção:</strong> Cozinhar alimentos, lavar frutas e verduras, cuidado ao limpar caixas de areia</p>
+
+      <div class="quiz">
+        <h3>Quiz - Toxoplasmose</h3>
+        <div class="question" data-answer="A">
+          <p>1. Causada por:</p>
+          <div class="options">
+            <button>A) Protozoário Toxoplasma gondii</button>
+            <button>B) Vírus da toxina</button>
+            <button>C) Bactéria intestinal</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="B">
+          <p>2. Transmissão mais comum:</p>
+          <div class="options">
+            <button>A) Picada de inseto</button>
+            <button>B) Ingestão de carne crua ou contato com fezes de gato contaminadas</button>
+            <button>C) Mordida de cachorro</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="B">
+          <p>3. Grupo de risco importante:</p>
+          <div class="options">
+            <button>A) Idosos</button>
+            <button>B) Gestantes</button>
+            <button>C) Crianças vacinadas</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>4. Como prevenir:</p>
+          <div class="options">
+            <button>A) Lavar bem frutas, verduras e mãos após mexer na terra ou areia</button>
+            <button>B) Evitar contato com cães</button>
+            <button>C) Tomar antibióticos</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>5. Os gatos:</p>
+          <div class="options">
+            <button>A) Podem eliminar o parasita nas fezes</button>
+            <button>B) Sempre ficam doentes</button>
+            <button>C) Não têm relação com a doença</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ESPOROTRICOSE -->
+    <section class="disease-section">
+      <div class="disease-header">
+        <img src="images/esporotricose.jpg" alt="Esporotricose" class="disease-img">
+        <h2>Esporotricose</h2>
+      </div>
+      <p><strong>Causa:</strong> Fungo Sporothrix</p>
+      <p><strong>Transmissão:</strong> Arranhões ou mordidas de gatos infectados, contato com plantas ou solo contaminado</p>
+      <p><strong>Sintomas:</strong> Feridas na pele que demoram a cicatrizar</p>
+      <p><strong>Prevenção:</strong> Usar luvas ao manusear plantas ou animais doentes</p>
+
+      <div class="quiz">
+        <h3>Quiz - Esporotricose</h3>
+        <div class="question" data-answer="C">
+          <p>1. É causada por:</p>
+          <div class="options">
+            <button>A) Vírus</button>
+            <button>B) Bactéria</button>
+            <button>C) Fungo Sporothrix</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="B">
+          <p>2. Transmitida principalmente por:</p>
+          <div class="options">
+            <button>A) Picada de insetos</button>
+            <button>B) Arranhões ou mordidas de gatos infectados</button>
+            <button>C) Ar contaminado</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="B">
+          <p>3. Acomete principalmente:</p>
+          <div class="options">
+            <button>A) Olhos</button>
+            <button>B) Pele</button>
+            <button>C) Ossos</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>4. Sintoma típico:</p>
+          <div class="options">
+            <button>A) Feridas que não cicatrizam</button>
+            <button>B) Tosse seca</button>
+            <button>C) Febre alta</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>5. Prevenção:</p>
+          <div class="options">
+            <button>A) Usar luvas ao lidar com gatos doentes e jardinagem</button>
+            <button>B) Evitar tomar banho</button>
+            <button>C) Comer frutas cítricas</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRUCELOSE -->
+    <section class="disease-section">
+      <div class="disease-header">
+        <img src="images/brucelose.jpg" alt="Brucelose" class="disease-img">
+        <h2>Brucelose</h2>
+      </div>
+      <p><strong>Causa:</strong> Bactéria Brucella</p>
+      <p><strong>Transmissão:</strong> Consumo de leite cru/derivados ou contato direto com animais infectados</p>
+      <p><strong>Sintomas:</strong> Febre, cansaço, dores, suor noturno</p>
+      <p><strong>Prevenção:</strong> Vacinação de animais, consumir produtos pasteurizados, cuidados no manejo de animais doentes</p>
+
+      <div class="quiz">
+        <h3>Quiz - Brucelose</h3>
+        <div class="question" data-answer="A">
+          <p>1. Causada por:</p>
+          <div class="options">
+            <button>A) Bactérias do gênero Brucella</button>
+            <button>B) Protozoários</button>
+            <button>C) Vírus</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>2. Transmissão para humanos:</p>
+          <div class="options">
+            <button>A) Consumo de leite ou carne sem pasteurizar</button>
+            <button>B) Picada de mosquito</button>
+            <button>C) Contato com água suja</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>3. Afeta principalmente:</p>
+          <div class="options">
+            <button>A) Bovinos, suínos e humanos</button>
+            <button>B) Peixes</button>
+            <button>C) Aves</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>4. Sintoma em humanos:</p>
+          <div class="options">
+            <button>A) Febre, suor noturno e cansaço</button>
+            <button>B) Tosse seca</button>
+            <button>C) Diarreia leve</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>5. Prevenção:</p>
+          <div class="options">
+            <button>A) Vacinação do gado e consumo de produtos pasteurizados</button>
+            <button>B) Lavar as mãos apenas</button>
+            <button>C) Usar repelente</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TUBERCULOSE -->
+    <section class="disease-section">
+      <div class="disease-header">
+        <img src="images/tuberculose.jpg" alt="Tuberculose" class="disease-img">
+        <h2>Tuberculose</h2>
+      </div>
+      <p><strong>Causa:</strong> Bactéria Mycobacterium tuberculosis</p>
+      <p><strong>Transmissão:</strong> Ar, por gotículas respiratórias de pessoas infectadas</p>
+      <p><strong>Sintomas:</strong> Tosse persistente, febre, cansaço, perda de peso</p>
+      <p><strong>Prevenção:</strong> Vacina BCG, detecção precoce e tratamento adequado</p>
+
+      <div class="quiz">
+        <h3>Quiz - Tuberculose</h3>
+        <div class="question" data-answer="A">
+          <p>1. Causada por:</p>
+          <div class="options">
+            <button>A) Bactéria Mycobacterium tuberculosis</button>
+            <button>B) Vírus da gripe</button>
+            <button>C) Fungos</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>2. Principal via de transmissão:</p>
+          <div class="options">
+            <button>A) Ar, por gotículas respiratórias</button>
+            <button>B) Picada de inseto</button>
+            <button>C) Contato com pele</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="B">
+          <p>3. Sintoma característico:</p>
+          <div class="options">
+            <button>A) Dor abdominal</button>
+            <button>B) Tosse persistente por mais de 3 semanas</button>
+            <button>C) Coceira</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="A">
+          <p>4. Existe vacina?</p>
+          <div class="options">
+            <button>A) Sim, a BCG</button>
+            <button>B) Não existe</button>
+            <button>C) Só para idosos</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+        <div class="question" data-answer="B">
+          <p>5. Tuberculose pode afetar:</p>
+          <div class="options">
+            <button>A) Só pulmões</button>
+            <button>B) Pulmões e outros órgãos</button>
+            <button>C) Só ossos</button>
+          </div>
+          <div class="feedback"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>EducaZoo - Aprenda sobre zoonoses de forma interativa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
